@@ -1,5 +1,5 @@
 import React from "react";
-
+import Form from "../Form/Form";
 function App() {
   return (
     <main className="main">
@@ -20,23 +20,7 @@ function App() {
             veritatis deserunt? Quis, consequuntur minima.
           </p>
         </article>
-        <form className="form">
-          <input type="number" min="0" className="form__input" value="0" />
-          <select name="type" className="form__select">
-            <option value="paragraphs" className="form__option">
-              paragraphs
-            </option>
-            <option value="sentences" className="form__option">
-              sentences
-            </option>
-            <option value="words" className="form__option">
-              words
-            </option>
-          </select>
-          <button type="submit" className="form__button">
-            generate
-          </button>
-        </form>
+        <Form />
         <footer className="app__footer">Created by Krzysztof Grudzień</footer>
       </section>
       <section className="data">
