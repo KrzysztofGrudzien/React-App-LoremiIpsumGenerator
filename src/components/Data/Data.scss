@@ -7,9 +7,10 @@
   width: 50%;
 
   &__title {
+    font-family: Montserrat, sans-serif;
     margin-left: 1rem;
     letter-spacing: 1px;
-    padding: 1rem;
+    padding: 2rem;
     position: relative;
   }
 
@@ -25,10 +26,5 @@
     text-transform: uppercase;
     top: 0;
     right: 0;
-  }
-
-  &__text {
-    padding: 1rem;
-    margin: 1rem;
   }
 }
