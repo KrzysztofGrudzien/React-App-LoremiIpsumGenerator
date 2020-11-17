@@ -14,29 +14,61 @@ function App() {
             orem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
             iusto itaque, beatae error hic quia, nemo earum dignissimos non nisi
             molestias! Autem nulla vitae quam veritatis deserunt? Quis,
-            consequuntur minima.
+            consequuntur minima. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Accusamus iusto itaque, beatae error hic quia,
+            nemo earum dignissimos non nisi molestias! Autem nulla vitae quam
+            veritatis deserunt? Quis, consequuntur minima.
           </p>
         </article>
         <form className="form">
-          <input type="number" min="0" />
-          <select name="type">
-            <option value="paragraphs">paragraphs</option>
-            <option value="sentences">sentences</option>
-            <option value="words">words</option>
+          <input type="number" min="0" className="form__input" value="0" />
+          <select name="type" className="form__select">
+            <option value="paragraphs" className="form__option">
+              paragraphs
+            </option>
+            <option value="sentences" className="form__option">
+              sentences
+            </option>
+            <option value="words" className="form__option">
+              words
+            </option>
           </select>
-          <button type="submit">generate</button>
+          <button type="submit" className="form__button">
+            generate
+          </button>
         </form>
         <footer className="app__footer">Created by Krzysztof Grudzień</footer>
       </section>
       <section className="data">
         <h2 className="data__title">
-          You generated 3 paragraphs <div className="data__copy">copy</div>
+          You generated 3 paragraphs <span className="data__copy">copy</span>
         </h2>
         <p className="data__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
           facilis earum voluptas blanditiis in, quaerat eius corporis eveniet
           ipsa unde quia id magni nostrum totam nam aut cupiditate. Porro,
-          animi!
+          animi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+          similique, nobis cumque cum et natus sit velit voluptatibus quae nisi
+          error voluptatum. Reiciendis debitis ut harum perferendis ipsa ad
+          adipisci.
+        </p>
+        <p className="data__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          facilis earum voluptas blanditiis in, quaerat eius corporis eveniet
+          ipsa unde quia id magni nostrum totam nam aut cupiditate. Porro,
+          animi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+          similique, nobis cumque cum et natus sit velit voluptatibus quae nisi
+          error voluptatum. Reiciendis debitis ut harum perferendis ipsa ad
+          adipisci.
+        </p>
+        <p className="data__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          facilis earum voluptas blanditiis in, quaerat eius corporis eveniet
+          ipsa unde quia id magni nostrum totam nam aut cupiditate. Porro,
+          animi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+          similique, nobis cumque cum et natus sit velit voluptatibus quae nisi
+          error voluptatum. Reiciendis debitis ut harum perferendis ipsa ad
+          adipisci.
         </p>
         {/* <h2 className="data__title hidden">Your page is empty!</h2> */}
       </section>
