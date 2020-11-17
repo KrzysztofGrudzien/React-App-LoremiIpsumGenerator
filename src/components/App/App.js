@@ -20,7 +20,11 @@ class App extends Component {
           <Form />
           <Footer />
         </section>
-        <Data />
+        <Data
+          paragraphs={this.state.paragraphs}
+          sentences={this.state.sentences}
+          words={this.state.words}
+        />
       </main>
     );
   }
