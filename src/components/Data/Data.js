@@ -4,12 +4,12 @@ import DataItemSpan from "../DataItem/DataItemSpan";
 import "./Data.scss";
 import data from "../../data/data";
 
-const Data = ({ counter, type }) => {
+const Data = ({ counter, option }) => {
   const sentences = [...data.sentences];
   const paragraphs = [...data.paragraphs];
   const words = [...data.words];
 
-  if (type === "paragraphs") {
+  if (option === "paragraphs") {
     return (
       <section className="data">
         <h2 className="data__title">
@@ -22,7 +22,7 @@ const Data = ({ counter, type }) => {
         ))}
       </section>
     );
-  } else if (type === "sentences") {
+  } else if (option === "sentences") {
     return (
       <section className="data">
         <h2 className="data__title">
