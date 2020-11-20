@@ -13,18 +13,4 @@
     padding: 2rem;
     position: relative;
   }
-
-  &__copy {
-    background-color: var(--color-tertiary);
-    color: var(--color-primary);
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 1.6rem;
-    font-family: "Montserrat";
-    position: absolute;
-    padding: 1rem;
-    text-transform: uppercase;
-    top: 0;
-    right: 0;
-  }
 }
