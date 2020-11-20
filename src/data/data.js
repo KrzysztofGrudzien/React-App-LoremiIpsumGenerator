@@ -1,5 +1,6 @@
-const bigSentence =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna et. Ultricies mi eget mauris pharetra et ultrices. Mi bibendum neque egestas congue quisque egestas diam. Aliquet bibendum enim facilisis gravida neque convallis. Cursus sit amet dictum sit amet justo donec. Eu scelerisque felis imperdiet proin fermentum. Quam nulla porttitor massa id neque. Vitae tortor condimentum lacinia quis vel eros donec. Nascetur ridiculus mus mauris vitae ultricies leo. Turpis in eu mi bibendum neque egestas congue. Sociis natoque penatibus et magnis dis parturient montes. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Ut lectus arcu bibendum at varius vel pharetra vel. Venenatis urna cursus eget nunc scelerisque viverra mauris in. In fermentum et sollicitudin ac orci phasellus. Tortor aliquam nulla facilisi cras fermentum odio. Sit amet dictum sit amet justo donec enim diam. Consequat ac felis donec et odio pellentesque diam volutpat. Sed libero enim sed faucibus turpis in eu.";
+const bigSentence = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna et. Ultricies mi eget mauris pharetra et ultrices. Mi bibendum neque egestas congue quisque egestas diam. Aliquet bibendum enim facilisis gravida neque convallis. Cursus sit amet dictum sit amet justo donec. Eu scelerisque felis imperdiet proin fermentum. Quam nulla porttitor massa id neque. Vitae tortor condimentum lacinia quis vel eros donec. Nascetur ridiculus mus mauris vitae ultricies leo. Turpis in eu mi bibendum neque egestas congue. Sociis natoque penatibus et magnis dis parturient montes. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Ut lectus arcu bibendum at varius vel pharetra vel. Venenatis urna cursus eget nunc scelerisque viverra mauris in. In fermentum et sollicitudin ac orci phasellus. Tortor aliquam nulla facilisi cras fermentum odio. Sit amet dictum sit amet justo donec enim diam. Consequat ac felis donec et odio pellentesque diam volutpat. Sed libero enim sed faucibus turpis in eu.".split(
+  " "
+);
 
 const data = {
   paragraphs: [
@@ -46,7 +47,6 @@ const data = {
     "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
     "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
   ],
-  words: [bigSentence.split(" ")]
+  words: bigSentence
 };
-
 export default data;
