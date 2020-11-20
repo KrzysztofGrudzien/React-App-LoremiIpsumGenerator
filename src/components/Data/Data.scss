@@ -4,13 +4,32 @@
   @include border(1.5rem, solid, var(--color-primary));
   border-left: solid 1rem var(--color-primary);
   background-color: var(--color-grey-vlight);
-  width: 50%;
+  bottom: 2rem;
+  height: calc(100% - 4rem);
+  overflow-y: scroll;
+  position: absolute;
+  right: 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-tertiary) transparent;
+  top: 2rem;
+  width: calc(50% - 2rem);
 
   &__title {
     font-family: Montserrat, sans-serif;
     margin-left: 1rem;
     letter-spacing: 1px;
     padding: 2rem;
-    position: relative;
   }
+}
+
+.data::-webkit-scrollbar {
+  width: 5px;
+}
+.data:-webkit-scrollbar-track {
+  background: transparent;
+}
+.data::-webkit-scrollbar-thumb {
+  background-color: var(--color-tertiary);
+  border-radius: 20px;
+  border: transparent;
 }
