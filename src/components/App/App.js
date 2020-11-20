@@ -3,19 +3,11 @@ import Header from "../Header/Header";
 import ArticleDecoration from "../ArticleDecoration/ArticleDecoration";
 import Data from "../Data/Data";
 import Footer from "../Footer/Footer";
-import data from "../../data/data";
+
 class App extends Component {
   state = {
-    paragraphs: [...data.paragraphs],
-    sentences: [...data.sentences],
-    words: [...data.words],
     counter: 0,
     type: "paragraphs"
-  };
-
-  sendForm = e => {
-    e.preventDefault();
-    console.log(this.state.counter);
   };
 
   getCounter = e => {
@@ -24,6 +16,10 @@ class App extends Component {
 
   getType = e => {
     this.setState({ type: e.target.value });
+  };
+
+  sendForm = e => {
+    e.preventDefault();
   };
 
   render() {
@@ -62,11 +58,7 @@ class App extends Component {
           </form>
           <Footer />
         </section>
-        <Data
-          paragraphs={this.state.paragraphs}
-          sentences={this.state.sentences}
-          words={this.state.words}
-        />
+        <Data counter={this.state.counter} type={this.state.type} />
       </main>
     );
   }
