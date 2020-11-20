@@ -1,8 +1,13 @@
 .data {
   &__text {
+    display: inline-block;
     font-size: 1.6rem;
     font-weight: 400;
     padding: 1rem;
     margin: 1rem;
+  }
+
+  span &__text {
+    padding-left: 2rem;
   }
 }
