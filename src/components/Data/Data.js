@@ -8,28 +8,29 @@ const Data = ({ counter, option }) => {
   const sentences = [...data.sentences];
   const paragraphs = [...data.paragraphs];
   const words = [...data.words];
+  const OPTION = option;
+  const HEADER =
+    counter == 0 ? (
+      <h2 className="data__title">Your page is empty!</h2>
+    ) : (
+      <h2 className="data__title">
+        You generated {counter} {option}
+      </h2>
+    );
 
-  if (option === "paragraphs") {
+  if (OPTION === "paragraphs") {
     return (
       <section className="data">
-        <h2 className="data__title">
-          {counter == 0
-            ? `Your page is empty!`
-            : `You generated ${counter} paragraphs`}
-        </h2>
+        {HEADER}
         {paragraphs.slice(0, counter).map((paragraph, index) => (
           <DataItem item={paragraph} key={index} />
         ))}
       </section>
     );
-  } else if (option === "sentences") {
+  } else if (OPTION === "sentences") {
     return (
       <section className="data">
-        <h2 className="data__title">
-          {counter == 0
-            ? `Your page is empty!`
-            : `You generated ${counter} sentences`}
-        </h2>
+        {HEADER}
         {sentences.slice(0, counter).map((sentence, index) => (
           <DataItem item={sentence} key={index} />
         ))}
@@ -38,11 +39,7 @@ const Data = ({ counter, option }) => {
   } else {
     return (
       <section className="data">
-        <h2 className="data__title">
-          {counter == 0
-            ? `Your page is empty!`
-            : `You generated ${counter} words`}
-        </h2>
+        {HEADER}
         {words.slice(0, counter).map((word, index) => (
           <DataItemSpan item={word} key={index} />
         ))}
