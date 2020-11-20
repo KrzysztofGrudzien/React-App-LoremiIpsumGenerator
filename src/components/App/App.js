@@ -11,10 +11,6 @@ const App = () => {
   const handleOnChangeCounter = e => setCounter(e.target.value);
   const handleOnChangeOption = e => setOption(e.target.value);
 
-  // sendForm = e => {
-  // e.preventDefault();
-  // };
-
   return (
     <main className="main">
       <section className="app">
@@ -44,9 +40,6 @@ const App = () => {
               words
             </option>
           </select>
-          <button type="submit" className="form__button">
-            generate
-          </button>
         </form>
         <Footer />
       </section>
