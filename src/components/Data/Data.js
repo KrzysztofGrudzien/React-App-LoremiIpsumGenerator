@@ -10,12 +10,13 @@ const Data = ({ counter, option }) => {
   const paragraphs = [...data.paragraphs];
   const words = [...data.words];
   const OPTION = option;
+  const MAX_LENGTH = counter >= 20 ? (counter = 20) : counter;
   const HEADER =
     counter === 0 ? (
       <h2 className="data__title">Your page is empty!</h2>
     ) : (
       <h2 className="data__title">
-        You generated {counter} {option}
+        You generated {MAX_LENGTH} {option}
       </h2>
     );
 
@@ -23,7 +24,7 @@ const Data = ({ counter, option }) => {
     return (
       <section className="data">
         {HEADER}
-        {paragraphs.slice(0, counter).map((paragraph, index) => (
+        {paragraphs.slice(0, MAX_LENGTH).map((paragraph, index) => (
           <DataItem item={paragraph} key={index} />
         ))}
       </section>
@@ -32,7 +33,7 @@ const Data = ({ counter, option }) => {
     return (
       <section className="data">
         {HEADER}
-        {sentences.slice(0, counter).map((sentence, index) => (
+        {sentences.slice(0, MAX_LENGTH).map((sentence, index) => (
           <DataItem item={sentence} key={index} />
         ))}
       </section>
