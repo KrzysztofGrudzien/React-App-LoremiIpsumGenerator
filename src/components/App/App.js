@@ -6,17 +6,17 @@ import Footer from "../Footer/Footer";
 
 const App = () => {
   const [counter, setCounter] = useState(0);
-  const [option, setOption] = useState("paragraphs");
+  const [option, setSelect] = useState("paragraphs");
 
   const handleOnChangeCounter = e => setCounter(e.target.value);
-  const handleOnChangeOption = e => setOption(e.target.value);
+  const handleOnChangeOption = e => setSelect(e.target.value);
 
   return (
     <main className="main">
       <section className="app">
         <Header />
         <ArticleDecoration />
-        <form className="form">
+        <form className="form" onSubmit={e => e.preventDefault()}>
           <input
             type="number"
             min="0"
