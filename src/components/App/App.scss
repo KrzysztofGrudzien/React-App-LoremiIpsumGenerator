@@ -24,6 +24,12 @@ html {
 
 body {
   font-size: 1.6rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 1.4rem;
+  }
+  @media screen and (max-width: 460px) {
+    font-size: 1.2rem;
+  }
   font-family: "Playfair Display", "Times New Roman", "Georgia", serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -39,7 +45,13 @@ code {
 .main {
   background-color: var(--color-primary);
   @include border(2rem, solid, var(--color-grey-light));
+  @media screen and (max-width: 460px) {
+    border: none;
+  }
   display: flex;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
   min-height: 100vh;
 }
 
@@ -47,6 +59,9 @@ code {
   align-items: center;
   @include border(1.5rem, solid, var(--color-primary));
   border-right: solid 1rem var(--color-primary);
+  @media screen and (max-width: 1024px) {
+    border-right: solid 1.5rem var(--color-primary);
+  }
   background-color: var(--color-secondary);
   display: flex;
   flex-direction: column;
@@ -54,6 +69,9 @@ code {
   padding: 2rem;
   position: relative;
   width: 50%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .form {
