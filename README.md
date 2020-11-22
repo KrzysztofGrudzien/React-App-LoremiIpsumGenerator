@@ -19,6 +19,7 @@ I've used here:
 - React.js
 - React Hooks
 - Sass
+- Custom Properties
 - BEM
 - Adobe XD
 - VSC
