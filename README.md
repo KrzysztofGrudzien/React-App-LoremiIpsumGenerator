@@ -2,7 +2,7 @@
 
 ## About project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The app was created to improve and develop JS and React skills. Application is very easy to use and give us similar solution like in many others applications that type. The app tries to be as dynamic as possible. If you only choose something the view is automatically updated and you get what you expect. For paragraphs and sentences you can generate max 20 items, so if you write more than 20 the program setup automatically value equel 20.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The app was created to improve and develop JS and React skills. Application is very easy to use and gives us a similar solution like in many other applications of that type. The app tries to be as dynamic as possible. If you only choose something the view is automatically updated and you get what you expect. For paragraphs and sentences, you can generate a max of 20 items, so if you write more than 20 the program setup automatically values equal to 20.
 
 ## Video preview
 
@@ -38,3 +38,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console.
+
+## Contact to me
+
+If you want to contact me you can write me at krzysztof.grudzien.fed@gmail.com.
+
+## License
+
+This project don't have a license
