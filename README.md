@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Video preview
 
-![Lorem Ipsum Generator](./assets/video/lorem-generator.gif)
+![Lorem Ipsum Generator](src/assets/video/lorem-generator.gif)
 
 ## Demo version
 
