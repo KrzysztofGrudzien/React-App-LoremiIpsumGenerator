@@ -8,9 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![Lorem Ipsum Generator](src/assets/video/lorem-generator.gif)
 
-## Demo version
+## [Demo version](https://hungry-agnesi-de0c3f.netlify.app/)
 
-[SEE PROJECT HERE]("https://hungry-agnesi-de0c3f.netlify.app/")
+[SEE PROJECT HERE](https://hungry-agnesi-de0c3f.netlify.app/)
 
 ## Technology, methodology and tools
 
@@ -32,7 +32,7 @@ I've used here:
 - Add path of the project to the terminal
 - Write command `npm install`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 
 ### `npm start` - Runs the app in the development mode.
 
